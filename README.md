@@ -13,6 +13,13 @@ Learn the basics of ThingML. How to write you first program in a platform indepe
 
 *Deadline to submit contributions and maybe win a prize: October 31st, 2015*
 
+Guidelines for submission:
+
+- the hackathon is open to anyone related to the MODELS'15 tutorial (*e.g.* anyone who attended the tutorial, any colleague/student of an attendent). No restriction to the number of participants (*e.g.* several students supervised by an attendent to the MODELS tutorial can participate).
+- to enter the competition and maybe win a prize, you need to fork this repository, enhance it with your contribution and submit a pull request. You also need to answer a short survey (to be posted later on on this repository)
+- the contributions will be evalatuated by a commitee from the HEADS project composed of Knut Eilif Husa, Olivier Barais, Franck Fleurey and Brice Morin.
+- all participants can post issues on this repository (*e.g.* to clarify rules of participation, etc) or on the [HEADS IDE](https://github.com/HEADS-project/heads_ide/issues) repository if participants face techincal issues. To be fair to all participants, we will not answer such issues by email and only communicate via the public GitHub trackers.
+
 **This tutorial covers:**
 
 * Installing the ThingML tools (editor and compilers)
