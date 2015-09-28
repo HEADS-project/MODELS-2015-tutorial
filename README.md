@@ -5,6 +5,14 @@ HEADS ThingML modelling language basics
 
 Learn the basics of ThingML. How to write you first program in a platform independent way and compile it to different platforms ranging from an Arduino microcontroller to a plain Java program. Also learn how to write platform specific components and link to exiting APIs or libraries.
 
+**Fork this repository, add your contribution and answer and short survery, submit a pull request, and you might win an awesome IoT platform!** List of prizes:
+
+1. Intel Edison development kit
+2. Arduino Yun
+3. Arduino Uno
+
+*Deadline to submit contributions and maybe win a prize: October 31st, 2015*
+
 **This tutorial covers:**
 
 * Installing the ThingML tools (editor and compilers)
@@ -25,13 +33,13 @@ Learn the basics of ThingML. How to write you first program in a platform indepe
 
 To follow this tutorial, you need to have the ThingML editor and compilers. They are released as plugins for the Eclipse IDE. There are two different options for installing the ThingML tools: 
 
-* [Download the latest HEADS IDE Eclipse bundle](http://coreff5.istic.univ-rennes1.fr/jenkins/job/headside/ws/products.minimal/target/products/). This bundle contains all the HEADS plugins already installed.
+* [Download the latest HEADS IDE Eclipse bundle](http://coreff5.istic.univ-rennes1.fr/jenkins/job/headside/ws/products.minimal/target/products/). This bundle contains all the HEADS plugins already installed. If you attended the tutorial at MODELS 2015, you got the HEADS IDE on a USB stick.
 
 * Install the ThingML plugin in your own installation of Eclipse. [Follow the instructions](http://thingml.org/pmwiki.php?n=Main.OnlineDemo) on how to install the eclipse plugins.
 
 To check if the ThingML editor is properly installed, open a sample ".thingml" file. It should open with the ThingML editor (text editor with syntax highlighting). To check if the compilers are properly installed, right-click on a ".thingml" file. You should have a "HEADS / ThingML" sub-menu in the context menu. This sub-menu allows calling the different ThingML compilers.
 
-> Note: To run the generated Java code, we assume you have a JDK properly installed, as well as Maven. For Node.JS code, you need to install Node.JS. For Posix C, you need a GCC-Make toolchain (also possible on Windows using CygWin). Finally, to run the arduino code you need to install the Arduino IDE and have an Arduino board. You will find more details later in this document.
+> Note: To run the generated Java code, we assume you have a JDK properly installed, as well as Maven. For Node.JS code, you need to install Node.JS. For Posix C, you need a GCC-Make toolchain (also possible on Windows using CygWin). Finally, to run the arduino code you need to install the [Arduino IDE](https://www.arduino.cc/en/Main/Software) and have an Arduino board. You will find more details later in this document.
 
 ### 1. Hello World!
 
@@ -77,6 +85,10 @@ You may also open the generated project in your favorite IDE. Netbeans and Intel
 
 Hit Ctrl+C to stop the execution of the ThingML program.
 
+From the HEADS IDE: `Run as -> Maven build... -> clean install exec:java`
+
+> Make sure you have a proper JDK (not just a JRE). In HEADS IDE, go to `Preferences -> Java -> Installed JRE` and check it points to a JDK
+
 
 #### Compiling to C/C++, Building and running with GCC and Make
 
@@ -109,6 +121,8 @@ To run the generated code, go to the generated directory and run:
 	node behavior.js
 
 That is it!
+
+In HEADS IDE: click on `package.json` and `Run as npm install`, then click on `Main.js` and `Run as node application`
 
 ### 2. Asynchronous messaging with the Ping Pong Example
 
